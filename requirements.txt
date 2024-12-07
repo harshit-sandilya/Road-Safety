@@ -6,3 +6,6 @@ pandas
 argostranslate
 fastapi 
 uvicorn
+vosk
+sounddevice
+piper-tts

@@ -1,7 +1,7 @@
 from fastapi import FastAPI, HTTPException
 from middleware.HandlerManager import HandlerManager
-from request_schema.question import QuestionRequest
-from request_schema.setup import CreateHandlerRequest
+from schema.question import QuestionRequest
+from schema.setup import CreateHandlerRequest
 from threading import Thread
 
 
