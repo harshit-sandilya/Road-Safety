@@ -6,7 +6,10 @@ import sounddevice as sd
 
 class SpeechToText:
     def __init__(self, language="en"):
-        language = language + "-in"
+        if language == "en":
+            language = "en-us"
+        else:
+            language = "hi"
         self.model = Model(lang=language)
         self.q = queue.Queue()
         self.samplerate = 16000

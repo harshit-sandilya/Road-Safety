@@ -15,13 +15,13 @@ os.system("cls" if os.name == "nt" else "clear")
 while True:
     tts.speak("Please ask your question")
     print("Please ask your question")
-    question = stt.record()
+    question = stt.start_listening()
     print(f"Question: {question}")
     answer = handler.process_question(question)
     print(f"Answer: {answer}")
     tts.speak(answer)
     tts.speak("Do you have any more questions?")
     print("Do you have any more questions?")
-    more_questions = stt.record()
+    more_questions = stt.start_listening()
     if more_questions.lower() == "no":
         break
