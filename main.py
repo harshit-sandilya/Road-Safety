@@ -27,7 +27,7 @@ while True:
         tts.speak("Do you have any more questions?")
         print("Do you have any more questions?")
     else:
-        print(handler.translator.translate_en(("Do you have any more questions?"))
+        print(handler.translator.translate_en("Do you have any more questions?"))
     more_questions = stt.start_listening()
     if language == "hi":
         more_questions = handler.translator.translate_hi(more_questions)
